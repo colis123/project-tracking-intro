@@ -116,7 +116,12 @@ header {
     color: $dark-gray-blue;
     font-weight: 700;
     letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
+
 
 }
 
@@ -150,6 +155,10 @@ main {
         @extend %cta;
         background: $primary-color;
         color: #fff;
+
+        &:hover {
+          background: lighten($primary-color, 10%);
+        }
       }
 
       .cta-light {
